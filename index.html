@@ -1,16 +1,339 @@
-<!DOCTYPE HTML>
-<html lang="en-US">
-	<head>
-		<meta charset="UTF-8">
-		<meta http-equiv="refresh" content="1;url=http://www-verimag.imag.fr/~jhenry/">
-		<script type="text/javascript">
-			window.location.href = "http://www-verimag.imag.fr/~jhenry/"
-			</script>
-			<title>Page Redirection</title>
-		</head>
-		<body>
-			<!-- Note: don't tell people to `click` the link, just tell them that it is a link. -->
-			If you are not redirected automatically, follow the <a href='http://www-verimag.imag.fr/~jhenry/'>link to my old page</a>
-		</body>
-	</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!--<meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="Julien Henry">
+<link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
+
+<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="./dist/js/bootstrap.min.js"></script>
+<script src="./dist/js/holder.js"></script>
+<script src="./dist/js/anchor.js"></script>
+<script src="./dist/js/bootstrap-scrollspy.js"></script>
+<title>Julien Henry</title>
+
+<!-- Bootstrap core CSS -->
+<link href="./dist/css/bootstrap.css" rel="stylesheet">
+<link rel="stylesheet" href="./dist/font-awesome/css/font-awesome.min.css">	
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	  <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+	<![endif]-->
+
+<!-- Custom styles for this template -->
+<link href="carousel.css" rel="stylesheet">
+<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+</head>
+<!-- NAVBAR
+================================================== -->
+<body data-spy="scroll" data-target=".navbar">
+<div id="home" class="navbar-wrapper">
+	<div class="container">
+
+		<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<a href="#home" class="navbar-brand anchorLink">J. Henry</a>
+
+				</div>
+				<div class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#home" class="anchorLink">Home</a></li>
+						<li><a href="#research" class="anchorLink">Research</a></li>
+                <li><a href="#teaching" class="anchorLink">Teaching</a></li>
+                <li><a href="#misc" class="anchorLink">Misc.</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- Carousel
+    ================================================== -->
+    <div class="mycarousel slide" data-ride="mycarousel">
+      <div class="mycarousel-inner">
+        <div class="item active">
+          <div class="container">
+            <div class="mycarousel-caption">
+				<div class="col-sm-6 photo">
+					<img  src="photo.png" height="250" alt="me" />
+				</div>
+				<div class="col-sm-6">
+					<h1 class="text-left">Julien Henry</h1>
+					<h2 class="text-left">Ph.D Candidate in Computer Science</h2>
+					<br/>
+					<br/>
+				<ul class="followme">
+					<li>
+					<a href="mailto:firstname.lastname@imag.fr">
+						<i class="fa fa-envelope"></i>Email
+					</a>
+					</li>
+					<li>
+						<a
+							href="http://scholar.google.fr/citations?user=uHRSM-EAAAAJ"><i
+						class="fa fa-external-link"></i>Google Scholar</a>
+					</li>
+					<li>
+					<a href="http://dblp.uni-trier.de/pers/hd/h/Henry:Julien.html">
+						<i class="fa fa-search"></i>DBLP
+					</a>
+					</li>
+					<li>
+					<a href="http://fr.linkedin.com/in/julienhenry/">
+						<i class="fa fa-linkedin"></i>LinkedIn
+					</a>
+					</li>
+				</ul>
+				</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- /.mycarousel -->
+
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+      <!-- Three columns of text below the mycarousel -->
+      <div class="row">
+        <div class="col-lg-4">
+          <h2>About</h2>
+				<p class="text-left">
+				I am a Ph.D student in Computer Science in the Synchrone team of the Verimag laboratory. I work under the supervision of 
+<a href="http://www-verimag.imag.fr/~monniaux">David Monniaux</a> and 
+<a href="http://www-verimag.imag.fr/~moy">Matthieu Moy</a>.
+				</p>				
+				<p class="text-left">
+				My PhD topic is "Static Analysis by Abstract Interpretation and Decision Procedures".  
+				</p>
+
+				<p class="text-left">
+				<b>Email:</b> FirstName dot LastName at imag.fr
+				</p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <h2>Research</h2>
+		  <p class="text-left">I am working on static analysis by Abstract Interpretation, which is a commonly used techique to discover properties about a program (loop invariants, etc.). This technique computes an over-approximations of the set of possible states of the program. My topic is to refine this technique by using decision procedures (SMT-solving), in order to compute more precise invariants.
+		  </p>
+          <p><a class="btn btn-default anchorLink" href="#research" role="button">More &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <h2>Teaching</h2>
+          <p class="text-left">
+		  Since september 2011, I am teaching assisant at Grenoble-INP Ensimag.
+		  </p>
+          <p class="text-left">
+		  Since september 2012, I am also teaching compilation at Grenoble-INP
+		  Esisar.
+		  </p>
+          <p class="text-left"><a class="btn btn-default anchorLink" href="#teaching" role="button">More &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+
+	  <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette" id="research">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Research</h2>
+		  <h3>Publications</h3>
+				<ul>
+					
+					<li>Julien Henry, Mihail Asavoae, David Monniaux, Claire Maiza:
+					<B>How to compute worst-case execution time by optimization modulo theory and a clever encoding of program semantics</B>, 
+					(<a href="http://www.ittc.ku.edu/lctes14/">LCTES'14</a>), <a
+						href="./pdf/LCTES14.pdf"><i class="fa fa-download pad"></i>paper</a>, <a href="./pdf/LCTES14-slides.pdf"><i class="fa fa-download pad"></i>slides</a>
+					</li>
+					<li>Julien Henry, David Monniaux, Matthieu Moy:
+					<B>PAGAI: a path sensitive static analyser </B>, 
+					(<a href="http://tapas2012.inrialpes.fr/">TAPAS'12</a>), <a href="./pdf/TAPAS12.pdf"><i class="fa fa-download pad"></i>paper</a>, <a href="./pdf/TAPAS12-slides.pdf"><i class="fa fa-download pad"></i>slides</a> 
+					</li>
+					<li>Julien Henry, David Monniaux, Matthieu Moy:
+					<B>Succinct Representations for Abstract Interpretation</B>, Static Analysis Symposium 2012 
+					(<a href="http://www.sas2012.ens.fr/index.html">SAS'12</a>), pages 283-299, 
+					<a href="./pdf/SAS12.pdf"><i class="fa fa-download pad"></i>paper</a>, 
+					<a href="./pdf/SAS12-slides.pdf"><i class="fa fa-download pad"></i>slides</a>
+					</li>
+					<li>Nicolas Halbwachs, Julien Henry:
+				<B>When the decreasing sequence fails</B>, Static Analysis Symposium 2012 
+					(<a href="http://www.sas2012.ens.fr/index.html">SAS'12</a>),
+					pages 198-213,
+					<a href="./pdf/SAS12b.pdf"><i class="fa fa-download pad"></i>paper</a>
+					</li>
+				</ul>
+
+		  <h3>Pagai static analyser</h3>
+          <p>
+		  I am the main contributor of 
+		  <a href="http://pagai.forge.imag.fr">Pagai</a>, an
+		  open source static analyser for LLVM bitcode. It computes invariants involving the
+		  numerical variables of a program using state-of-the-art Abstract Interpretation
+		  based techniques. 
+		  </p>
+		  <p><a class="btn btn-lg btn-success" href="http://pagai.forge.imag.fr"
+		  role="button">Download Pagai &raquo;</a></p>
+
+			<ul>
+				<li><a href="./svcomp/Loop.html">SV-Comp Loop</a></li>
+				<li><a href="./svcomp/ProductLines.html">SV-Comp ProductLines</a></li>
+				<li><a href="./svcomp/ControlFlowInteger.html">SV-Comp ControlFrowInteger</a></li>
+			</ul>
+		  
+			<h3>LCTES'14 SMT-lib2 benchmarks</h3>
+			<p>Some benchmarks are available <a href="https://forge.imag.fr/frs/download.php/578/LCTES-smtlib2-benchmarks.tar.gz">here</a>.</p>
+        </div>
+        <div class="col-md-5">
+<pre class="prettyprint"><code>~$ pagai -i main.bc
+int main() {
+	int x = 0;
+	int y = 0;
+
+	/* reachable */
+	while (1) {
+		/* invariant:
+		102-x-y >= 0
+		y >= 0
+		x-y >= 0
+		*/
+		if (x <= 50)  {
+			// safe
+			y++;
+		} else // safe
+		       y--;
+	
+
+		if (y < 0) break;
+		// safe
+		x++;
+	}
+ 	
+	// safe
+	/* assert OK */
+	assert(x+y<=101);
+	/* assert OK */
+	assert(x <= 102);
+/* reachable */
+}
+</code></pre>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette" id="teaching">
+        <div class="col-md-5">
+          <!--
+			<img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+			-->
+        </div>
+        <div class="col-md-7">
+			<h2 class="featurette-heading">Teaching <span class="text-muted"> (in
+		French...)</span></h2>
+			<h4>Langages et Compilation</h4>
+			<p><a class="btn btn-default anchorLink" href="./teaching/cs410.html" role="button">More &raquo;</a>
+			</p>
+			<p>
+			CM et TD, 4A Grenoble-INP Esisar, 2012-2013 à 2013-2014
+			</p>
+
+			<h4>Circuits Numériques et Éléments d'Architecture</h4>
+			<p>
+			TP, 1A Grenoble-INP Ensimag, de 2011-2012 à 2013-2014
+			</p>
+				
+			<h4>TP Unix : Intro et Programmation shell</h4>
+			TP, 1A Grenoble-INP Ensimag, 2013-2014
+
+				
+			<h4>Projet Bases de Données</h4>
+			<p>
+			TP, 2A Grenoble-INP Ensimag, 2011-2012
+			</p>
+
+			<h4>Principes des Systèmes de Gestion de Bases de Données</h4>
+			<p>
+			Cours-TD, 2A Grenoble-INP Ensimag, 2011-2012
+			</p>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette" id="misc">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Misc. <span class="text-muted">External
+		  links and lecture notes</span></h2>
+          <p class="lead">
+				I provide some lecture notes (in French), that I wrote as an
+		  Esimag student.
+		  </p>
+				<p>
+					<a href="../pdf/TL.pdf">
+					<i class="fa fa-book pad"></i>
+					Théorie des langages, Ensimag 1A
+					</a>
+				</p>
+
+				<p>
+					<a href="../pdf/TL2.pdf">
+					<i class="fa fa-book pad"></i>
+					Calculabilité, Ensimag 1A
+					</a>
+				</p>
+
+
+				<p>
+					<a href="../pdf/analyse.pdf">
+					<i class="fa fa-book pad"></i>
+					Analyse pour l'ingénieur, Ensimag 1A
+					</a>
+				</p>
+
+				<p>
+					<a href="../pdf/Algo4.pdf">
+					<i class="fa fa-book pad"></i>
+					Algorithmique Avancée, Ensimag 2A
+					</a>
+				</p>
+
+          <p class="lead">
+			Here are some useful LaTeX memos (in French):
+		  </p>
+
+<ul>
+   <li><a href="http://tex.loria.fr/general/aide-memoire-latex-seguin1998.pdf">Aide mémoire de Vincent Seguin</a></li>
+   <li><a href="http://gwendal.haudebourg.free.fr/maths/pdf/aide_memoire.pdf">gwendal.haudebourg.free.fr</a></li>
+   <li><a href="ftp://ftp.laas.fr/pub/Logiciels/latex/flshort/flshort-3.20.pdf">Une courte (?) introduction à LaTeX 2e</a></li>
+   <li><a href="ftp://ftp.inria.fr/pub/TeX/CTAN/info/JMPL.ps.gz">Joli Manuel Pour LaTeX</a></li>
+   </ul>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <!-- /END THE FEATURETTES -->
+
+      <!-- FOOTER -->
+      <footer>
+		<p>&copy; 2013 J. Henry</p>
+      </footer>
+
+    </div><!-- /.container -->
+  </body>
+</html>
 

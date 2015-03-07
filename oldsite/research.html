@@ -1,0 +1,125 @@
+<!--[if lt IE 9]>
+<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Julien Henry</title>
+<link rel="stylesheet" type="text/css" href="default.css" />
+</head>
+<body>
+
+<div id="upbg"></div>
+
+<div id="outer">
+
+
+	<header>
+		<div id="headercontent">
+			<h1>Julien Henry</h1>
+			<h2>PhD Student at Verimag</h2>
+		</div>
+	</header>
+	
+	<nav>
+		<ul>
+			<li><a href="./index.html">Home</a></li>
+			<li><a href="./research.html" class="active">Research</a></li>
+			<li><a href="./teaching.html">Teaching</a></li>
+			<li><a href="./cv.html">CV</a></li>
+			<li><a href="./misc.html">Misc.</a></li>
+		</ul>
+	</nav>
+	<div id="menubottom"></div>
+
+	
+	<div id="content">
+
+		<div id="normalcontent">
+			
+			<div class="contentarea">
+
+				<p>
+				I am working on static analysis by Abstract Interpretation, 
+				which is a commonly used techique to discover properties about a program (loop invariants, etc.).
+				This technique computes an over-approximations of the set of possible states of the program.
+				My topic is to refine this technique by using decision procedures (SMT-solving), in order to 
+				compute more precise invariants.
+				</p>
+
+				<h4>The PAGAI tool</h4>
+				<p>
+				I am developping a static analyser, called PAGAI, on top of the LLVM compiler infrastructure.
+				It implements various state-of-the-art analysis techniques by abstract interpretation and decision procedures, and computes numerical invariants
+				over a program expressed as an LLVM bitcode file.
+				The tool is open source, and downloadable here : <a href="http://pagai.forge.imag.fr">http://pagai.forge.imag.fr</a>
+				</p>
+
+				<div class="divider1"></div>
+				
+				<h4>Publications</h4>
+
+				<ul>
+					
+					<li>Julien Henry, David Monniaux, Matthieu Moy:
+					<B>PAGAI: a path sensitive static analyser </B>, 
+					(<a href="http://tapas2012.inrialpes.fr/">TAPAS'12</a>)
+					, <a href="./pdf/TAPAS12.pdf">paper</a>, <a href="./pdf/TAPAS12-slides.pdf">slides</a> 
+					</li>
+					<li>Julien Henry, David Monniaux, Matthieu Moy:
+					<B>Succinct Representations for Abstract Interpretation</B>, Static Analysis Symposium 2012 
+					(<a href="http://www.sas2012.ens.fr/index.html">SAS'12</a>)
+					, pages 283-299, <a href="./pdf/SAS12.pdf">paper</a>, <a href="./pdf/SAS12-slides.pdf">slides</a>
+					</li>
+					<li>Nicolas Halbwachs, Julien Henry:
+				<B>When the decreasing sequence fails</B>, Static Analysis Symposium 2012  
+					(<a href="http://www.sas2012.ens.fr/index.html">SAS'12</a>),
+					pages 198-213
+					</li>
+				</ul>
+
+				<div class="divider1"></div>
+				
+				<h4>Master Thesis</h4>
+				
+				<p>
+				<b>Abstract</b>: Program verification aims at statically discovering properties on programs,
+				such as the values that can take the different variables during execution.
+				Abstract Interpretation is a technique that  computes an
+				over-approximation of the set of these values, since it is impossible to
+				compute the real set in general.
+				This report takes place in the many attempts to improve the precision of
+				static Analysis by Abstract Interpretation. It proposes a technique that
+				takes benefit of SMT-solving to obtain more precise results at reasonable
+				cost.	
+				</p>
+				<p>
+				<b>Report</b>:
+				</p>
+				<p class="center">
+					<a href="./pdf/M2R_report.pdf">
+					<img src="./images/pdf.jpeg" width="10%" alt="report"/>
+					</a>
+				</p>
+			</div>
+		</div>
+
+	
+	</div>
+
+	<footer>
+		<div class="left">
+			<a href="http://creativecommons.org/licenses/by-sa/3.0/"><img src="images/cc-by-sa.png" alt="Creative Common license"/></a>
+		</div>
+		<div class="right">
+			<a href="http://validator.w3.org/check?uri=referer"><img
+			src="images/HTML5-logo.png" alt="HTML 5" height="30"/></a>
+		</div>
+	</footer>
+	
+</div>
+
+</body>
+</html>

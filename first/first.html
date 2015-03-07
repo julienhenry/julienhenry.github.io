@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Atelier DFI</title>
+		<link href="jsImgSlider/themes/1/js-image-slider.css" rel="stylesheet" type="text/css" />
+		<script src="jsImgSlider/themes/1/js-image-slider.js" type="text/javascript"></script>
+		<link href="generic.css" rel="stylesheet" type="text/css" />
+	</head>
+
+	<body>
+		<div id="header">
+			<h1>Atelier DFI</h1>
+			<h1>Aide à la conception d'un robot par des collégiens</h1>
+		</div>
+			<h3>Morgan Almanza, Louis Cuel, Julien Henry, Fakhri Torkhani</h3>
+			<img src="pictures/CD-logo-couleur.jpg" alt="" width="200" />
+		<div id="sliderFrame">
+			<div id="slider">
+				<img src="pictures/scaled_0.jpg" alt="" />
+				<img src="pictures/scaled_1.jpg" alt="Salle de stage" />
+				<img src="pictures/scaled_2.jpg" alt="Exemple de robot FTC" />
+				<img src="pictures/scaled_3.jpg" alt="Spécification de l'arène" />
+				<img src="pictures/scaled_4.jpg" alt="Semaine de stage" />
+				<img src="pictures/scaled_5.jpg" alt="" />
+			</div>
+		</div>
+		<div class="div2"><h1>Introduction à l'atelier-projet</h1>
+			Cette page présente nos travaux effectués dans le cadre des
+			ateliers-projets du DFI de l'université de Grenoble (label RES). L'objectif de
+			cet atelier fût d'encadrer des collégiens participant à un concours
+			de robotique appelé FIRST Tech Challenge.
+		</div>
+		
+		<div class="div2"><h1>Le concours FIRST Tech Challenge</h1>
+			<p> Le concours FIRST Tech Challenge est un concours de robotique international se déroulant chaque année, et dont les règles changent d'une année à l'autre. Notre atelier a consisté principalement à accompagner des collégiens à la conception d'un robot permettant de participer à l'épreuve "Ring It Up!". Les principales règles de cette épreuve sont les suivantes :
+			</p>
+				<ul>
+					<li>Le robot doit pouvoir attraper des anneaux placés en bord de l'arène, les déplacer et les déposer sur un portant central. Selon l'emplacement où a été déposé l'anneau, l'équipe gagne un certain nombre de points. Ce nombre dépend de plusieurs facteurs : hauteur, position par rapport à un émetteur infra-rouge, etc.</li>
+					<li>L'épreuve se déroule en deux temps. Durant les 30 premières secondes, le robot doit déposer son anneau de façon complètement autonome. Ceci exige de programmer le robot pour qu'il agisse seul. Nous avons donc initié les collégiens à la programmation des robots. Dans un second temps, le robot doit être piloté avec des manettes par deux membres de l'équipe. Nous avons alors accompagné les collégiens à la programmation des manettes</li>
+				</ul>
+			<p>
+			Pour plus de détails sur les règles du jeu, voici la vidéo officielle (en anglais) :
+			</p>
+			<div class="center">
+				<iframe src="http://www.youtube.com/embed/oIQtLqLT654" width="320" height="190"></iframe>
+			</div>
+		</div>
+
+		<div class="div2"><h1>Encadrement du stage</h1>
+			<p> 
+Une grande partie de notre travail a consisté à organiser et encadrer un stage d'une semaine pour six élèves de troisième aucours duquel nous devions aider les collégiens à :
+<ul>
+	<li>apprendre les bases d'algorithmique.</li>
+	<li>prendre en main les outils informatiques permettant le contrôle du robot.</li>
+	<li>imaginer et construire leur robot.</li>
+</ul>
+Nous avions, pour ce faire, une salle dans le batiment de l'école d'ingénieur PHELMA au polygone scientifique. Cette salle comportait tous les outils pour que les élèves puissent avancer dans leur projet de construction et contrôle de leur robot, à savoir : 
+<ul>
+	<li>l'arène dans laquelle le jeu aura lieu</li>
+	<li>trois PC muni du programme Labview indispensable pour contrôler les robot</li>
+	<li>trois socles de robots à améliorer</li>
+</ul>
+			</p> 
+
+
+			<h2>Enseignement de l'algorithmique.</h2>
+			<p> 
+   Dans le but de pouvoir controler leur robot, il fallait tout d'abord que les élèves aient quelques notions d'algorithmique. Nous avons donc, tout au long de la semaine, donné de petits cours magistraux ayant pour but de comprendre ce qu'est un algorithme.
+   A titre d'exemple, nous abordé durant le premier cours :
+   <ul>
+	   <li>La définition de l'algorithme : Un algorithme est une suite finie
+		   d’opérations ou d'instructions permettant de résoudre un problème.</li>
+	   <li>Les algorithmes appris en cours de maths au collège : algorithme
+		   d'euclide.</li>
+	   <li>Les outils de base de l'algorithmique : Si, boucle pour, boucle Tant
+		   que, opérateur logique : Et Ou, ...</li> 
+   </ul>
+			</p> 
+
+<h2>La programmation avec Labview</h2>
+			<p> 
+   Labview est un logiciel permettant d'écrire des programmes contrôlant le robot. Le langage de programmation lié à labview a la particularité d'être graphique. Cela se traduit par le fait qu'un programme labview ne se présente pas sous la forme d'une suite de lignes de codes, mais est constitué de formes géométriques :
+			</p> 
+
+			<div class="center">
+				<img src="pictures/ms_loopcond1.gif" alt="" />
+				<p>
+				Un exemple simple de programme pour faire avancer le robot
+				jusqu'à un obstacle. On utilise ici un moteur et un capteur
+				"bouton poussoir".
+				</p>
+			</div>
+
+			<p> 
+Cette présentation a l'avantage d'être très accessible pour des collégiens. La maîtrise de ce langage a néanmoins nécessité, en amont, un travail non négligeable.
+   Durant la semaine de stage, deux journées entières ont été conscrées à des ateliers sur Labview. Ces ateliers se présentaient la plupart du temps par de petit challenges. Par exemple, après une matinée de prise en main du logiciel, l'atelier de l'après-midi avait pour énoncé : "écrire un programme Labview pour que votre robot sorte du labirynthe". Nous avions, pour cela, disposé des obstacles dans l'arène pour créer un labirynthe. Pour résoudre ce problème, les élèves étaient par binômes et devaient utiliser un capteur ultrason et écrire un programme qui commande le robot dans ce labirynthe. Après de nombreux essais, les trois binômes sont parvenus à faire éviluer le robot dans le labirynthe.
+   Les différents ateliers ont ainsi permis aux élèves de pouvoir gérer les différents capteurs(ultra-son, infra-rouge...) ainsi que les moteurs des roues et du bras articulés.
+			</p> 
+
+			<div class="center">
+				<img src="pictures/NXT.jpg" alt="" />
+				<p>
+				La brique NXT, les capteurs et les moteurs
+				</p>
+			</div>
+
+
+
+			<h2>La construction des robots</h2>
+			<p> 
+   Le concours FIRST offre une grande liberté quand à la construction du robot. Munit d'une boite à outil du type "légo technique", les élèves devaient imaginés un chassis pouvant acceuillir un bras permettant de manipuler les anneaux. La partie la plus technique est la conception du bras. En effet, ce bras doit à la fois pouvoir manipuler les anneaux convenablement, mais il doit surtout être contrôlable facilement. Les élèves ont ainsi imaginé différents bras parmis lesquels nous en avons retenu un à la fois pour sa simplicité et pour son efficacité.
+			</p> 
+
+
+			<p> 
+Même si les élèves n'ont pas réussi, en une semaine, à rendre efficace leur
+robot pendant la phase autonome, ils ont bien avancé sur cet objectif, et les
+différents ateliers de construction et de programmations leur ont vraiment
+permis de se lancer dans ce concours.
+			</p>
+		</div>
+
+		<div class="div2"><h1>Visite de laboratoires de Recherche</h1>
+				<p>
+				Durant une journée, Les élèves ont visité deux laboratoires de recherche : le GIPSA et la G2Elab avec des expériences ludiques. On énumère celles qui ont eu le plus de succès auprès d’eux :
+				</p>
+
+			<div class="center">
+				<img src="pictures/experience1.png" alt="" width="80%" />
+			</div>
+				<p>
+Le vélo  électrique, il s’agit d’un vélo muni d’un alternateur connecté sur un Wattmètre et des lampes. Les élèves ont ressenti ce que représente fournir 100W (puissance électrique). Et ils ont pu la comparer à des ordres de grandeur de consommation d’objets usuels.
+				</p>
+			<div class="center">
+				<img src="pictures/experience2.png" alt="" width="80%" />
+			</div>
+				<p>
+L’interaction mécanique entre aimant-aimant, aimant-courant, courant-courant est expérimentée. Et on montre comment on peut se servir de ces interactions pour faire des actionneurs linéaires (rails de Laplace) ou rotation (moteur pas à pas).
+				</p>
+			<div class="center">
+				<img src="pictures/experience3.png" alt="" width="80%" />
+			</div>
+				<p>
+L’utilisation de l’énergie lumineuse pour produire de l’électricité puis de l’hydrogène à partir d’eau. On montre ensuite un exemple de pile à combustible à l’hydrogène. Puis en discussion on aborde le problème des énergies intermittentes et la nécessité d’avoir des systèmes de stockage d’énergie.
+				</p>
+			<div class="center">
+				<img src="pictures/experience4.png" alt="" width="80%" />
+			</div>
+				</p>
+Ces expériences ont permis aux élèves de pouvoir réaliser des manipulations simples mais qui permettent de comprendre certains enjeux de la recherche et de problématique sociétale autour de l’énergie. Les élèves nous ont aussi posé des questions pour savoir comment on travaille et le parcours que l’on a suivi.
+				</p>
+		</div>
+
+		<div class="div2"><h1>Le Forum</h1>
+			<p> 
+				Plusieurs collèges de la région grenobloise participent au concours de cette année. Pour aider et informer l'ensemble des équipes participantes, nous avons mis en place une plateforme d'e-learning destinée à répondre aux questions des participants, à déposer des documents de support, la traduction française des règles du concours, etc.
+			</p>
+			<p> La plateforme d'e-learning (qui nécessite la création d'un compte) est accessible à l'adresse suivante :
+				<a href="http://campus.chamilo.org/courses/FIRSTGRENOBLE/index.php">http://campus.chamilo.org/courses/FIRSTGRENOBLE/index.php</a>
+			</p>
+			<p> 
+				Cette plateforme, et en particulier le forum de discussion, nous
+				a permis de répondre à de nombreuses questions des équipes
+				concernant le matériel qu'ils devaient utiliser, des soucis
+				techniques, etc.
+			</p>
+		</div>
+
+		<div class="div2"><h1>Conclusion</h1>
+			L'atelier projet s'est bien déroulé. Il peut se décomposer en quatre
+			travaux différents:		
+			<ul>
+				<li>Simplification de documents de supports pour le concours
+					FIRST Tech Challenge</li>
+				<li>Création d'une plateforme de e-learning</li>
+				<li>Organisation de visite de laboratoires de recherche
+					grenoblois</li>
+				<li>Organisation d'un stage d'une semaine dans les locaux de
+					Grenoble-INP Phelma</li>
+			</ul>
+			Cet atelier nous a été très formateur. En effet, la dimension
+			"pédagogie" a joué un rôle important : il a fallu enseigner des
+			concepts compliqués pour des élèves de collège, notamment la
+			programmation, tout en leur faisant partager le goût des
+			sciences et de la recherche. Nous pensons avoir réussi à le faire
+			grâce aux différentes choses que l'on a faites durant cet atelier.
+		</div>
+
+	<div id="footer">
+			<div class="center">
+				<a href="http://validator.w3.org/check?uri=referer"><img
+				src="pictures/HTML5-logo.png" alt="HTML 5" height="30"/></a>
+				<a href="http://creativecommons.org/licenses/by-sa/3.0/"><img
+							src="pictures/cc-by-sa.png" alt="Creative Common license"/></a>
+			</div>
+	</div>
+
+	</body>
+</html>

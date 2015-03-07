@@ -1,0 +1,81 @@
+
+/* For generic page styles. Not for sliders. */
+@font-face
+{
+font-family: "GeosansLight";
+src: url('GeosansLight.ttf');
+}
+
+body {background:#F6F6F6;font:normal 0.9em Arial; margin:0; padding:0; padding-bottom:60px;}
+
+#header
+{
+width: 100%;
+height: 9.0em;
+background: #2B2B2B url('pictures/topbg.gif') repeat-x;
+margin-bottom: 2px;
+}
+
+#header h1 {
+font-family: "GeosansLight";
+margin: 0;
+padding: 10px;
+text-align: center;
+font-weight: normal;
+color: #fff;
+font-size: 2.0em;
+}
+
+#footer
+{
+position: relative;
+height: 2.0em;
+clear: both;
+padding-top: 5.0em;
+font-size: 0.8em;
+}
+
+#footer .left
+{
+position: absolute;
+left: 2.0em;
+bottom: 1.2em;
+}
+
+#footer .right
+{
+position: absolute;
+right: 2.0em;
+bottom: 1.2em;
+}
+
+h1 {
+	font-family: "GeosansLight";
+	color: #000060;
+}
+
+h2 {
+	font-family: "GeosansLight";
+}
+
+h3 {
+	font-family: "GeosansLight";
+}
+
+.div1, .div2 {width:700px;margin:0 auto;}
+.div1 {margin-top:30px;margin-bottom:60px;text-align:center;line-height:20px;}
+.div1 P {font-size:18px;}
+.div1 a, .div2 a {color:#07C; }
+.div1 a {margin:0 8px;}
+.div1 a.current {color:black; text-decoration:none;}
+.div2 {margin-top:70px;}
+.div2 li {padding-top:6px;padding-bottom:6px;}
+.green {color:Green;}
+.cn {font-family: "Courier New", Georgia;}
+#status {display:inline-block; margin-left:26px;line-height:50px;height:50px;vertical-align:middle;}
+.center {text-align:center;}
+.code
+{
+    border: dashed 1px #BCBCCB; padding:8px 12px; background-color: #F3F3F9; white-space:pre; font-family:"Courier New", Georgia;
+    font-size:12px; margin:6px 0;overflow:auto; 
+}
